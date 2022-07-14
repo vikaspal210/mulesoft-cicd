@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="mulesoft-cicdFlow" doc:id="ab415ad3-c2ee-4e1b-ac1b-f926031a71f1" >
+		<scheduler doc:name="Scheduler" doc:id="303871e3-6111-40e6-9d55-876ab02a42d5" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="1" timeUnit="HOURS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="321210ae-03b9-4553-b698-40450a8b7f2d" message="Scheduler ran"/>
+	</flow>
+</mule>
